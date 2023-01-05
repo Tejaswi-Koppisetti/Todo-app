@@ -19,7 +19,7 @@ app.get("/", async (request, response) => {
   const overduetodos = await Todo.overdue();
   const duetodaytodos = await Todo.dueToday();
   const duelatertodos = await Todo.dueLater();
-  const completed = await Todo.completedTodos();
+  const completed = await Todo.completedTodo();
   if (request.accepts("html")) {
     response.render("index", {
       overduetodos,
