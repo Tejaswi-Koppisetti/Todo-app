@@ -1,0 +1,12 @@
+body {
+  color: black;
+  font-family: "Arial";
+  background-color: rgb(135, 213, 135);
+}
+
+.Todo-Item:hover .trash-icon {
+  display: block;
+}
+h5 {
+  display: inline;
+}
