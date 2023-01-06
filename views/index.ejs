@@ -1,10 +1,3 @@
-ejs.render(
-  html,
-  {},
-  {
-    root: process.cwd(),
-  }
-)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,10 +66,10 @@ ejs.render(
                     </div>
                 </form>
                 <div>
-                    <%- include('todos.ejs', {title: "Overdue", data: overduetodos}) %> <%-
-                    include('todos.ejs', {title: "Due Today", data: duetodaytodos}) %> <%-
-                    include('todos.ejs', {title: "Due Later", data: duelatertodos}) %> <%-
-                    include('todos.ejs', {title: "Completed Items", data: completed}) %>
+                    <%- include('todos.ejs', {title: "Overdue", data: overduetodos}) %> 
+                    <%- include('todos.ejs', {title: "Due Today", data: duetodaytodos}) %>
+                    <%- include('todos.ejs', {title: "Due Later", data: duelatertodos}) %>
+                    <%- include('todos.ejs', {title: "Completed Items", data: completed}) %>
                 </div>
             </div>
         </div>
