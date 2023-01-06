@@ -56,7 +56,7 @@ module.exports = (sequelize, DataTypes) => {
         order: [["id", "ASC"]],
       });
     }
-    static completedItems() {
+    static completedTodo() {
       return this.findAll({
         where: {
           completed: true,
