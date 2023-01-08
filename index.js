@@ -1,6 +1,4 @@
 const app = require("./app");
-
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`Started express server at ${port}`);
+app.listen(process.env.PORT || 3030, () => {
+  console.log("Started express server at port 3000");
 });
